@@ -94,13 +94,9 @@ Github
 
 <img src="./img/nft.png" width=800 /> -->
 
-### Deployed Contract
-
-<img src="./img/contract.png" width=800 />
-
 ### Contract source
 
-<img src="./img/sol.png" width=800 />
+<img src="./img/contract.png" width=800 />
 
 
 ### Useful links

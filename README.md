@@ -1,16 +1,13 @@
 <br/>
 <p align='center'>
-    <img src='./img/logo.png' width=400/>
+    <img src='https://i.ibb.co/XsDBhD7/logo.png' width=400/>
 </p>
 
 <br/>
 
 ### Accord
 
-Accord is a ported dapp for producing sending and accepting document agreements as smart contracts.
-
-Accord is a ported web3 app to the XDC network that enables any user to set up and collect signed document agreements on the XDC Apothem testnet or XDC mainnet.
-
+Accord is a ported dapp for producing sending and accepting document agreements on smart contracts, with signatures minted as NFTs. Enables Docusign-like capabilities and use-cases using web3 infrastructure to set up and collect signed document agreements on the XDC Apothem testnet or XDC mainnet.
 
 <!-- 
 Try it out <a href="accord.surge.sh" target="_blank">here</a>! (requires Metamask connected to XDC testnet).
@@ -20,12 +17,13 @@ Demo video:
 
 ### Benefits
 
-- Accord enables anyone to create and collect esignature against documents without a vendor agreement. A xdc smart contract is deployed for each request.
+- Accord enables anyone to create and collect esignature against documents without a vendor agreement. An XDC smart contract is deployed for each esignature request.
 - Each packet of documents for esignature is made accessible at an IPFS url.
 - When the esignature is completed, an NFT is generated that links both the signer's signature and the documents being agreed on.
 - Hosted documents and the request are immutable.
-- Smart contract deployed on XDC which marks the progress/fulfillment of the esignature request. The contract can only be marked completed by the designated signer address at time of final signature.
+- Smart contract deployed on XDC marks the progress/fulfillment of the esignature request. The contract can only be marked completed by the designated signer address at the time of final signature.
 - An individual in the context of the Accord application is the pairing of a canvas (handwritten) signature and wallet signature/address.
+- Wallet addresses are used as the source of identity instead of traditional means like username/password pairs and email addresses. Users attempting to access an esignature request without being under the assigned signer address are denied access.
 
 ### Technologies used
 
@@ -36,9 +34,9 @@ Demo video:
 To run/demo the project locally, Accord requires the following environment variables.
 
 <pre>
-    REACT_APP_NFT_PORT_KEY={YOUR_NFT_PORT_API_KEY} # NFT port api key for receipt creation.
+    REACT_APP_NFT_PORT_KEY={YOUR_NFT_PORT_API_KEY} # NFT port api key for NFT signature receipt creation.
     REACT_APP_STORAGE_KEY={YOUR_WEB3_STORAGE_KEY} # web3.storage key for file hosting.
-    REACT_APP_USE_MAINNET={false/true} # (Optional) String boolean indicating whether the XDC mainnet should be used. Defaults to test mode if unset.
+    REACT_APP_USE_MAINNET={false/true} # (Optional) String boolean indicating whether the XDC mainnet should be used. Defaults to false (testnet) if unset.
 </pre>
 
 ---
@@ -48,9 +46,6 @@ After declaring the above environment variables, use the below command to start 
 
 Recompiling Accord contract:
 `cd contracts; npx hardhat compile`
-
-Example esignature requests contracts:
-http://localhost:3000/sign/QmUAS9XJyf9gPgadoVeExESiVnVJmVJW6qtcU4dzJzwG96
 
 <!--
 Sponsors:

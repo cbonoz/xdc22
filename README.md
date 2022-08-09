@@ -9,7 +9,7 @@
 
 Accord is a ported dapp for producing sending and accepting document agreements on smart contracts, with signatures minted as NFTs. Enables Docusign-like capabilities and use-cases using web3 infrastructure to set up and collect signed document agreements on the XDC Apothem testnet or XDC mainnet.
 
-Try it out <a href="accord.surge.sh" target="_blank">here</a>! (requires Metamask connected to XDC testnet).
+Try it out <a href="https://accordxdc.surge.sh" target="_blank">here</a>! (requires Metamask connected to XDC testnet).
 
 Demo video:  https://www.youtube.com/watch?v=T6zYfxUCfjM
 
